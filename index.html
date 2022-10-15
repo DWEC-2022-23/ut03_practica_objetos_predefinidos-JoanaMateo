@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="T3_Tarea.css">
+    <title>T3_TAREA</title>
+</head>
+<body>
+    <header>
+        <p><h1>EJERCICIOS TAREA TEMA 3</h1></p>
+    </header>
+    <section>
+
+        <script src="T3_Tarea.js"></script>
+
+        <div class="Ej" id="ej1">
+            <h3>Ejercicio 1</h3>
+            <input type="date" name="fecha" id="fechaInput"><br>
+            <button type= "button" onclick="reyesMagos(document.getElementById('fechaInput').value)">
+                <h2>Reyes Magos</h2>
+            </button>
+            <div id="salidaEjercicio1"></div>
+        </div>
+        <div class="Ej">
+            <h3>Ejercicio 2</h3>
+            <button type= "button" onclick="fechaHora()"><h2>Fecha y Hora</h2></button>
+        </div>
+        <div class="Ej">
+            <h3>Ejercicio 3</h3>
+            <label>Introduce el valor del radio, por favor:
+            <input type="number" id="radio"></label><br>
+            <button type= "button" onclick="calcularAreaCirculo(document.getElementById('radio').value)"><h2>Radio</h2></button>
+        </div>
+        <div class="Ej">
+            <h3>Ejercicio 4</h3>
+            <label><input type="text" name="min" value="Introduce un valor minimo" id="min" size="50">
+            <input type="text" name="max" value="Introduce un valor maximo" id="max" size="50"></label><br>
+            <button type= "button" onclick="calcularAleatorio(document.getElementById('min').value, document.getElementById('max').value)"><h2>Aleatorio</h2></button>    
+            <div id="salidaEjercicio4"></div>
+        </div>
+        <div class="Ej">
+            <h3>Ejercicio 5</h3>
+            <input type="text" name="cadena" id="cadena" value="Introduce una cadena" size="50"><br>
+            <div id="salidaEjercicio5"></div>
+            <div id="cadenaBoton">
+                <button type= "button" onclick="mitadCar(document.getElementById('cadena').value)"><h2>Primera Mitad</h2></button>    
+                <button type= "button" onclick="ultimoCaracter(document.getElementById('cadena').value)"><h2>Ultimo Caracter</h2></button>    
+                <button type= "button" onclick="cadenaInversa(document.getElementById('cadena').value)"><h2>Cadena Inversa</h2></button>    
+                <button type= "button" onclick="cadenaGuiones(document.getElementById('cadena').value)"><h2>Cadena con Guiones</h2></button>    
+                <button type= "button" onclick="contarVocales(document.getElementById('cadena').value)"><h2>Contar las Vocales Texto</h2></button>    
+            </div>
+            
+        </div>
+                               
+    </section>
+    <footer>
+
+    </footer>
+       
+</body>
+</html>
